@@ -1,12 +1,10 @@
-import Link from "next/link";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 type Member = { name: string; position: string; photo: string };
 
 export default function About() {
   const t = useTranslations("About");
-  const locale = useLocale();
   const members: Member[] = t.raw('team.members');
 
   return (

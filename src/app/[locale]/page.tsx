@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   const t = useTranslations('Home');
@@ -15,9 +16,11 @@ export default function Home() {
           aria-hidden="true"
           className="pointer-events-none select-none absolute inset-0 flex items-center justify-center z-0"
         >
-          <img
+          <Image
             src="/images/logo0.jpg"
             alt="A-PRO background logo"
+            width={800}
+            height={800}
             className="w-full h-full object-contain opacity-80"
             style={{
               filter: "none",
