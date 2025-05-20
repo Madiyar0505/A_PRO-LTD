@@ -9,7 +9,7 @@ type Member = { name: string; position: string; photo: string };
 
 export default function About() {
   const t = useTranslations("About");
-  const members: Member[] = t.raw('team.members');
+  const members: Member[] = t.raw('team.members').filter((member: Member) => member.name.trim() !== "Bakhyt Zhumadilova");
   const { locale } = useParams();
 
   return (
