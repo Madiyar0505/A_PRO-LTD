@@ -101,6 +101,11 @@
           "name": "Adam Ishimgaliyev",
           "position": "Co-founder, international direction",
           "photo": "/images/photo4.jpeg"
+        },
+        {
+          "name": "Bakhyt Zhumadilova",
+          "position": "Co-founder of neSPI LLP, HR Director",
+          "photo": "/images/photo5.jpeg"
         }
       ]
     }
@@ -120,7 +125,7 @@
         { "name": "Rustem Zhantenov ", "position": "Founder of neSPI LLP, CEO", "photo": "/images/photo2.jpeg" },
         { "name": "Sergey Tsiryulnikov ", "position": "Co-founder of neSPI LLP, PR Director", "photo": "/images/photo1.jpeg " },
         { "name": "Bakhtiyar Murzataev ", "position": "Co-founder of neSPI LLP, Creative Director", "photo": "/images/photo6.png" },
-        { "name": "Bakhyt Zhumadilova ", "position": "Co-founder of neSPI LLP, HR Director", "photo": "/images/photo8.jpeg" },
+        { "name": "Bakhyt Zhumadilova ", "position": "Co-founder of neSPI LLP, HR Director", "photo": "/images/photo5.jpeg" },
         { "name": "Ernar Zhanakhmetov ", "position": "Co-founder of neSPI LLP, Deputy CEO", "photo": "/images/photo7.jpeg" }
       ]
     },
