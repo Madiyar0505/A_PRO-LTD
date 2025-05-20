@@ -1,13 +1,16 @@
+"use client";
 import { useTranslations } from 'next-intl';
 import Link from "next/link";
 import Image from 'next/image';
+import { useParams } from 'next/navigation';
 
 type Member = { name: string; position: string; photo: string };
 
 export default function Person2Page() {
   const t = useTranslations('Person2');
   const members: Member[] = t.raw('team.members');
-  const images = members.map((member) => member.photo || "/default.jpg");
+  const images = members.map((member) => (member.photo || "/default.jpg").trim());
+  const { locale } = useParams();
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gray-50 py-16 px-4">
@@ -42,12 +45,4 @@ export default function Person2Page() {
       <Link href="/about" className="mt-4 inline-block bg-[#22543d] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#1a3a2a] transition">{t('back')}</Link>
     </main>
   );
-}
-
-export function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ru' },
-    { locale: 'kz' }
-  ];
 } 
