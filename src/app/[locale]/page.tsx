@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 export default function Home() {
   const t = useTranslations('Home');
@@ -107,11 +108,10 @@ export default function Home() {
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto md:mx-0">
             {t('cta.desc')}
           </p>
-          <a href="/contacts" className="inline-block bg-white text-[#22543d] px-8 py-3 rounded-lg font-semibold hover:bg-[#fbbf24] hover:text-[#22543d] border-2 border-[#fbbf24] transition md:ml-auto">
+          <Link href="/contacts" className="inline-block bg-white text-[#22543d] px-8 py-3 rounded-lg font-semibold hover:bg-[#fbbf24] hover:text-[#22543d] border-2 border-[#fbbf24] transition md:ml-auto">
             {t('cta.button')}
-          </a>
+          </Link>
         </div>
-
       </section>
     </main>
   );

@@ -1,4 +1,4 @@
-import Footer from '@/components/footer';
+// import Footer from '@/components/footer';
 import { Mail, Phone, MapPin, Instagram } from "lucide-react";
 import { useTranslations } from "next-intl";
 

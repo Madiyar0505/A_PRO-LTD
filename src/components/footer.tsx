@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Footer() {
   const t = useTranslations('Footer');
@@ -13,7 +14,7 @@ export default function Footer() {
           <div className="flex justify-center md:justify-start mb-6 md:mb-0">
             <Link href="/">
               <div className="w-20 h-20 rounded-full border-4 border-[#fbbf24] bg-white flex items-center justify-center shadow-lg overflow-hidden">
-                <img src="/images/logo0.jpg" alt="A-PRO logo" className="object-contain w-16 h-16" />
+                <Image src="/images/logo0.jpg" alt="A-PRO logo" width={64} height={64} className="object-contain w-16 h-16" />
               </div>
             </Link>
           </div>

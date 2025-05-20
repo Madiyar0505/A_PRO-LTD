@@ -2,9 +2,12 @@ import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 
+type Member = { name: string; position: string; photo: string };
+
 export default function About() {
   const t = useTranslations("About");
   const locale = useLocale();
+  const members: Member[] = t.raw('team.members');
 
   return (
     <main className="max-w-4xl mx-auto px-4">
@@ -52,31 +55,19 @@ export default function About() {
 
       {/* Team Section */}
       <section className="py-20">
-        <h2 className="text-3xl font-bold text-center mb-12 text-[#22543d]">{t('team.title')}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {t.raw('team.members').map((member: any, idx: number) => (
-            <Link
-              key={idx}
-              href={`/${locale}/about/${idx === 0 ? 'person1' : idx === 1 ? 'person2' : idx === 2 ? 'person3' : ''}`}
-              className="flex flex-col items-center bg-white rounded-2xl border-2 border-[#fbbf24] shadow-lg p-8 transition-all duration-300 hover:shadow-2xl hover:border-[#22543d] hover:-translate-y-1"
-            >
-              <div className="w-32 h-32 rounded-full border-4 border-[#fbbf24] flex items-center justify-center mb-4 overflow-hidden bg-[#fff7e6] text-[#22543d] text-3xl font-bold select-none">
-                {member.photo ? (
-                  <Image
-                    src={member.photo}
-                    alt={member.name}
-                    width={128}
-                    height={128}
-                    className="object-cover w-full h-full"
-                  />
-                ) : (
-                  member.name.split(' ').map((n: string) => n[0]).join('').slice(0,2)
-                )}
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-[#22543d] text-center">{t('team.title')}</h2>
+          <div className="flex flex-wrap justify-center gap-8">
+            {members.map((member: Member, idx: number) => (
+              <div key={idx} className="flex flex-col items-center bg-white rounded-2xl shadow-xl p-8 w-80 max-w-full">
+                <div className="w-40 h-40 rounded-full border-2 border-[#22543d] flex items-center justify-center mb-4 overflow-hidden bg-white shadow-lg">
+                  <Image src={member.photo || '/default.jpg'} alt={member.name} width={160} height={160} className="w-full h-full object-cover rounded-full" />
+                </div>
+                <h2 className="text-lg font-bold mb-1 text-center">{member.name}</h2>
+                <p className="text-gray-600 text-center text-sm">{member.position}</p>
               </div>
-              <h3 className="text-lg font-bold mb-1 text-[#22543d] text-center">{member.name}</h3>
-              <p className="text-[#fbbf24] text-center text-base font-medium">{member.position}</p>
-            </Link>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     </main>
