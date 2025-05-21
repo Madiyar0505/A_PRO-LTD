@@ -13,7 +13,7 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "logoAlt": "NESPI logo",
-    "services": "Key directions",
+    "services": " Main directions",
     "contacts": "Contacts"
   },
   "Footer": {
@@ -125,6 +125,7 @@
         { "name": "Rustem Zhantenov ", "position": "Founder of neSPI LLP ", "photo": "/images/photo2.jpeg" },
         { "name": "Sergey Tsiryulnikov ", "position": "Co-founder of neSPI LLP", "photo": "/images/photo1.jpeg " },
         { "name": "Bakhtiyar Murzataev ", "position": "Co-founder of neSPI LLP ", "photo": "/images/photo6.jpeg" },
+        { "name": "Bakhyt Zhumadilova ", "position": "Co-founder of neSPI LLP ", "photo": "/images/photo5.jpeg" },
         { "name": "Ernar Zhanakhmetov ", "position": "Co-founder of neSPI LLP ", "photo": "/images/photo7.jpeg" }
       ]
     },
