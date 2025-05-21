@@ -116,11 +116,11 @@
   "Person2": {
     "team": {
       "members": [
-        { "name": "Рустем Жантенов ", "position": "Основатель ТОО neSPI, генеральный директор", "photo": "/images/photo2.jpeg" },
-        { "name": "Сергей Цырульников ", "position": "Сооснователь ТОО neSPI, PR директор", "photo": "/images/photo1.jpeg " },
-        { "name": "Бахтияр Мурзатаев ", "position": "Сооснователь ТОО neSPI, креативный директор", "photo": "/images/photo6.png" },
-        { "name": "Бахыт Жумадилова ", "position": "Сооснователь ТОО neSPI, HR директор", "photo": "/images/photo5.jpeg" },
-        { "name": "Ернар Жанахметов ", "position": "Сооснователь ТОО neSPI, заместитель генерального директора", "photo": "/images/photo7.jpeg" }
+        { "name": "Рустем Жантенов ", "position": "Основатель ТОО neSPI", "photo": "/images/photo2.jpeg" },
+        { "name": "Сергей Цырульников ", "position": "Сооснователь ТОО neSPI", "photo": "/images/photo1.jpeg " },
+        { "name": "Бахтияр Мурзатаев ", "position": "Сооснователь ТОО neSPI", "photo": "/images/photo6.png" },
+        { "name": "Бахыт Жумадилова ", "position": "Сооснователь ТОО neSPI ", "photo": "/images/photo5.jpeg" },
+        { "name": "Ернар Жанахметов ", "position": "Сооснователь ТОО neSPI", "photo": "/images/photo7.jpeg" }
       ]
     },
     "back": "Назад"

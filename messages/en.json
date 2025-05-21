@@ -122,10 +122,10 @@
   "Person2": {
     "team": {
       "members": [
-        { "name": "Rustem Zhantenov ", "position": "Founder of neSPI LLP, ", "photo": "/images/photo2.jpeg" },
-        { "name": "Sergey Tsiryulnikov ", "position": "Co-founder of neSPI LLP,", "photo": "/images/photo1.jpeg " },
-        { "name": "Bakhtiyar Murzataev ", "position": "Co-founder of neSPI LLP, ", "photo": "/images/photo6.png" },
-        { "name": "Ernar Zhanakhmetov ", "position": "Co-founder of neSPI LLP, ", "photo": "/images/photo7.jpeg" }
+        { "name": "Rustem Zhantenov ", "position": "Founder of neSPI LLP ", "photo": "/images/photo2.jpeg" },
+        { "name": "Sergey Tsiryulnikov ", "position": "Co-founder of neSPI LLP", "photo": "/images/photo1.jpeg " },
+        { "name": "Bakhtiyar Murzataev ", "position": "Co-founder of neSPI LLP ", "photo": "/images/photo6.png" },
+        { "name": "Ernar Zhanakhmetov ", "position": "Co-founder of neSPI LLP ", "photo": "/images/photo7.jpeg" }
       ]
     },
     "back": "Back"
